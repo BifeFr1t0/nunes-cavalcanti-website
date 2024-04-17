@@ -1,0 +1,564 @@
+@font-face {
+    font-family:PoppinsReg;
+    src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family:PoppinsMed;
+    src: url("fonts/Poppins-Medium.ttf");
+}
+@font-face {
+    font-family:PoppinsSemi;
+    src: url("fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family:Kanit;
+    src: url("fonts/Kanit-Regular.ttf");
+}
+@font-face {
+    font-family:Abeezee;
+src: url("fonts/ABeeZee-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    transition: all 0.3s;
+    /*outline:1px solid blue;*/
+    
+}
+
+header a{
+    text-decoration: none;
+    padding:18px 50px 18px 50px;
+    font-family:Kanit;
+    font-size:1vw;
+    background-color: rgb(33, 22, 20);
+    border-radius:6%;
+    color:azure
+}
+
+header a:hover{
+    background-color:rgb(242, 93, 73);
+}
+
+body{
+    font-family:PoppinsReg;
+    margin:0;
+    padding:0;
+    
+}
+
+main{
+    margin:0px 100px 0px 100px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    outline:5px solid rgb(255, 105, 51);
+    border-radius:0.5vw;
+    margin:0px 100px 0px 100px;
+}
+.logo{
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+    width:35%;
+}
+
+
+h1{
+    font-size: 1.55vw;
+    color:rgb(17, 17, 17);
+    font-family:PoppinsSemi;
+}
+
+.subtitle{
+    color:rgb(255, 104, 49);
+    font-size:0.90em;
+    font-family:PoppinsMed;
+}
+
+.logo img{
+    width:20%;
+}
+
+header img{
+    width:7.5%;
+    height:7.5%;
+}
+
+h2{
+    font-family:PoppinsSemi;
+    font-size:1.75vw;
+    color:rgb(17, 17, 17);
+}
+#sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 80px 20px 80px;
+}
+
+#sobre img{
+    width:30%;
+    height:30%;
+    border-radius: 3%;
+}
+
+.sobreTexto{
+    width:600px;
+}
+
+.sobreTexto p{
+    margin-top: 30px;
+    padding:1.2vw;
+    font-size:0.9vw;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.601);
+    color: aliceblue;
+    border-radius: 1.5%;
+}
+
+#portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 80px 20px 80px;
+}
+.portfolio {
+    margin: 0px 80px 0px 80px;
+    width:70%;
+    font-size:0.9vw;
+    line-height: 2.0em
+}
+
+#portfolio h2{
+    text-align: center;
+    background-color: rgb(237, 100, 100);
+    border-radius: 0.25vw;
+    padding:0.5vw 0vw 0.5vw 0vw
+}
+
+#miniGallery h2{
+    font-family:PoppinsSemi;
+    font-size:1.45vw;
+    color:rgb(17, 17, 17);
+    text-decoration: underline;
+}
+
+#miniGallery{
+    margin:0px 80px 0px 80px;
+}
+
+.miniGallery{
+    margin:0px 80px 0px 80px;
+    display:flex;
+    justify-content:center;
+}
+.container-images{
+    display: flex;
+    justify-content: center;
+}
+
+.images h3{
+    font-size: 1.2vw;
+    text-align: center;
+}
+.pergolados,.decks,.construcao,.pinturas{
+    display: flex;
+    background-color: rgba(45, 20, 78, 0.164);
+}
+.slider1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider2{
+    display:none;
+    
+}
+
+
+.images img{
+    width:10vw;
+    border:2px solid black;
+    border-radius:0.125vw;
+    cursor:pointer;
+    margin:2vw 0.5vw 2vw 0.5vw;
+    height:10vw;
+}
+
+.images img:hover{
+    transform: scale(1.05);
+}
+
+.ForwardButton, .BackButton{
+    display: flex;
+    align-items: center;
+    font-size:2vw;
+    padding:30px 20px 30px 20px;
+    cursor:pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+.ForwardButton:hover, .BackButton:hover{
+    background:rgb(121, 121, 121);
+    color:rgb(255, 88, 58);
+}
+.BackButton{
+    visibility: hidden;
+}
+footer{
+    color:azure;
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(29, 24, 22);
+    
+}
+
+footer a{
+    border-radius: 50%;
+}
+
+footer img{
+    border-radius: 25%;
+    width:8%;
+    background-color:rgba(255, 255, 255, 0);
+    margin-left:30px;
+    
+}
+
+footer p{
+    font-size:1vw
+}
+.redeSociais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniGallery h2{
+    background-color: cornflowerblue;
+    padding:1vw 3vw 1vw 3vw;
+    border-radius:0.20vw;
+}
+
+.blackBackground{
+    display:flex;
+}
+
+footer h2{
+    font-size: 1.26vw;
+    color:azure;
+}
+.whatsapp img{
+    width:5vw;
+}
+.whatsapp{
+    display: block;
+    position:fixed;
+    top:85%;
+    left:92.5%;
+    background-color: rgb(109, 226, 80);
+    border-radius: 100%;
+    width:5vw;
+}
+
+.whatsapp:hover{
+    background-color: rgb(76, 156, 56);
+    cursor: pointer;
+}
+
+.closeWhatsapp{
+    display: block;
+    position:fixed;
+    top:50%;
+    left:97%;
+    background-color: rgb(53, 99, 223);
+    border-radius: 5%;
+    width:4vw;
+    padding:1vw 1vw 1vw 1vw
+}
+
+.closeWhatsapp:hover{
+    background-color: rgb(34, 23, 129);
+    color:rgb(36, 108, 175);
+    cursor: pointer;
+}
+.mobile{
+    display: none;
+}
+
+
+
+/* MEEDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+@media  only screen and (max-width: 560px){
+    body{
+        font-family:PoppinsReg;
+        margin:0;
+        padding:0;
+        width:99vw;
+    }
+
+    header a{
+        text-decoration: none;
+        padding:27.5px 15px 27.5px 15px;
+        font-family:Kanit;
+        font-size:3.5vw;
+        background-color: rgb(33, 22, 20);
+        border-radius:6%;
+        color:azure
+    }
+    
+    header a:hover{
+        background-color:rgb(242, 93, 73);
+    }
+    
+    
+    
+
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        border-bottom:5px solid rgb(255, 105, 51);
+        outline:0;
+        border-radius:0.5vw;
+        width:100%;
+        margin:0;
+    }
+    .logo{
+        padding:0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:35%;
+    }
+    
+    
+    h1{
+        font-size: 3.55vw;
+        color:rgb(17, 17, 17);
+        font-family:PoppinsSemi;
+    }
+    
+    .subtitle{
+        color:rgb(255, 104, 49);
+        font-size:0.80em;
+        font-family:PoppinsMed;
+    }
+    
+    .logo img{
+        width:40%;
+    }
+    
+    #stickman{
+        display: none;
+    }
+    
+    h2{
+        font-family:PoppinsSemi;
+        font-size:5.75vw;
+        color:rgb(17, 17, 17);
+
+    main{
+        margin:0
+    }
+
+    }
+    #sobre{
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile img{
+        width:60vw;
+        border-radius: 0.5vw;
+    }
+    #sobre img{
+        width:60vw;
+        height:60vw;
+        border-radius: 3%;
+        transform: translateX(15%);
+        display: none;
+    }
+    
+    .sobreTexto{
+        width:600px;
+        display: static;
+    }
+    
+    .sobreTexto p{
+        margin-top: 30px;
+        padding:2.2vw;
+        font-size:3.3vw;
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.601);
+        color: aliceblue;
+        border-radius: 1.5%;
+        width:80vw;
+        
+    }
+    
+    #portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px 5px 0px;
+        width:110vw;
+        transform: translateX(-24.9%);
+        text-align: justify;
+    }
+    .portfolio {
+        width:100%;
+        font-size:3.5vw;
+        line-height: 2.0em
+    }
+    
+    #portfolio h2{
+        background-color: rgb(237, 100, 100);
+        border-radius: 1.25vw;
+        padding:1vw 2vw 1vw 2vw;
+        transform: translateX(22.7%);
+        width:50vw
+    }
+    
+    #miniGallery h2{
+        font-family:PoppinsSemi;
+        font-size:5.45vw;
+        color:rgb(17, 17, 17);
+        text-decoration: underline;
+        width:100vw;
+        padding:1vw 35vw 1vw 35vw;
+        transform: translateX(-1.5%);
+    }
+    
+    
+    .miniGallery{
+        margin:0px;
+        display:flex;
+        justify-content:center;
+    }
+   
+    .images h3{
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    .images img{
+        width:25vw;
+        border:2px solid black;
+        border-radius:0.125vw;
+        cursor:pointer;
+        margin:2vw 0.5vw 2vw 0.5vw;
+        height:25vw;
+    }
+    
+    .images img:hover{
+        transform: scale(1.05);
+    }
+    #mobileRemove{
+        display: none;
+    }
+    .ForwardButton, .BackButton{
+        display: flex;
+        align-items: center;
+        font-size:2vw;
+        padding:30px 10px 30px 10px;
+        cursor:pointer;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .ForwardButton:hover, .BackButton:hover{
+        background:rgb(121, 121, 121);
+        color:rgb(255, 88, 58);
+    }
+    .BackButton{
+        visibility: hidden;
+    }
+    footer{
+        color:azure;
+        margin-top: 6vw;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(29, 24, 22);
+        width:100vw
+    }
+    
+    footer a{
+        border-radius: 50%;
+    }
+    
+    footer img{
+        border-radius: 25%;
+        width:17%;
+        background-color:rgba(255, 255, 255, 0);
+        margin-left:30px;
+        
+    }
+    
+    footer p{
+        display: none;
+    }
+    .redeSociais{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .miniGallery h2{
+        background-color: cornflowerblue;
+        padding:1vw 3vw 1vw 3vw;
+        border-radius:0.20vw;
+    }
+    
+    .blackBackground{
+        display:flex;
+    }
+    
+    footer h2{
+        font-size: 3vw;
+        color:azure;
+        margin:0vw 3vw 0vw 3vw;
+        
+    }
+    .whatsapp img{
+        width:17.5vw;
+    }
+    .whatsapp{
+        display: block;
+        position:fixed;
+        top:88%;
+        left:80.5%;
+        background-color: rgb(109, 226, 80);
+        border-radius: 100%;
+        width:17.5vw;
+    }
+    
+    .whatsapp:hover{
+        background-color: rgb(76, 156, 56);
+        cursor: pointer;
+    }
+    
+    .closeWhatsapp{
+        display: block;
+        position:fixed;
+        top:50%;
+        left:90%;
+        background-color: rgb(53, 99, 223);
+        border-radius: 5%;
+        width:10vw;
+        padding:2vw 2vw 2vw 2vw
+    }
+    
+    .closeWhatsapp:hover{
+        background-color: rgb(34, 23, 129);
+        color:rgb(36, 108, 175);
+        cursor: pointer;
+    }
+    
+}
