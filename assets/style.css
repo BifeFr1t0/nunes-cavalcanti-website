@@ -256,7 +256,7 @@ footer h2{
 }
 .whatsapp{
     display: block;
-    position:absolute;
+    position:fixed;
     top:85%;
     left:92.5%;
     background-color: rgb(109, 226, 80);
@@ -298,7 +298,10 @@ footer h2{
         margin:0;
         padding:0;
         width:99vw;
+        display: flex;
+        flex-direction: column;
     }
+    
     
     header a{
         text-decoration: none;
@@ -444,9 +447,9 @@ footer h2{
     .miniGallery{
         margin:0px;
         display:flex;
-        justify-content:center;
+        
     }
-   
+    
     .images h3{
         font-size: 4vw;
         text-align: center;
@@ -488,7 +491,7 @@ footer h2{
         display: flex;
         justify-content: space-around;
         background-color: rgb(29, 24, 22);
-        width:100vw
+        width:100%
     }
     
     footer a{
@@ -531,8 +534,6 @@ footer h2{
         width:17.5vw;
     }
     .whatsapp{
-        display: block;
-        position:fixed;
         top:88%;
         left:80.5%;
         background-color: rgb(109, 226, 80);
@@ -547,7 +548,7 @@ footer h2{
     
     .closeWhatsapp{
         display: block;
-        position:absolute;
+        position:fixed;
         top:50%;
         left:90%;
         background-color: rgb(53, 99, 223);
