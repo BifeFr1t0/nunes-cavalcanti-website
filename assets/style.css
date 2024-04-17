@@ -299,7 +299,7 @@ footer h2{
         padding:0;
         width:99vw;
     }
-
+    
     header a{
         text-decoration: none;
         padding:27.5px 15px 27.5px 15px;
@@ -393,7 +393,9 @@ footer h2{
         width:600px;
         display: static;
     }
-    
+    section{
+        margin:0;
+    }
     .sobreTexto p{
         margin-top: 30px;
         padding:2.2vw;
@@ -411,12 +413,11 @@ footer h2{
         justify-content: center;
         align-items: center;
         margin: 10px 0px 5px 0px;
-        width:110vw;
+        width:100vw;
         transform: translateX(-24.9%);
         text-align: justify;
     }
     .portfolio {
-        width:100%;
         font-size:3.5vw;
         line-height: 2.0em
     }
@@ -435,7 +436,7 @@ footer h2{
         color:rgb(17, 17, 17);
         text-decoration: underline;
         width:100vw;
-        padding:1vw 35vw 1vw 35vw;
+        padding:1vw 25vw 1vw 25vw;
         transform: translateX(-1.5%);
     }
     
