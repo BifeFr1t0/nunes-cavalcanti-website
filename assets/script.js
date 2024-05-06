@@ -27,17 +27,20 @@ function doSlider(slider,slider2,button,button2){
 
 function seeImage(clicker,body,about,portfolio){
     clicker.addEventListener('click',()=>{
-        clicker.style.position='absolute';
-	    clicker.style.top='80%';
+        body.style.visibility='hidden';
+        body.style.backgroundColor='rgba(0,0,0,0.735)';
+        clicker.style.visibility='visible';
+        clicker.style.boxSizing='content-box'
+        clicker.style.position='fixed';
+	    clicker.style.top='50%';
 	    clicker.style.left='50%';
         clicker.style.transform='translate(-50%,-50%)';
-	    clicker.style.width='60%';
+	    clicker.style.width='50vh';
 	    clicker.style.height='auto';
-        clicker.style.outline='1000vh solid rgba(0, 0, 0, 0.738)';
-        clicker.style.border='0px';
+        clicker.style.border='1vh';
         about.style.display='none';
         portfolio.style.display='none';
-        body.addEventListener('dblclick',()=>{
+        clicker.addEventListener('click',()=>{
             location.reload();
         })
     })
