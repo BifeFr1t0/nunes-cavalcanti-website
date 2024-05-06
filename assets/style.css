@@ -301,9 +301,10 @@ footer h2{
         font-family:PoppinsReg;
         margin:0;
         padding:0;
-        width:99%;
+        width:100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     
     
@@ -370,15 +371,15 @@ footer h2{
         color:rgb(17, 17, 17);
 
     main{
-        margin:0
+        margin:0;
+        width:90vw;
     }
 
     }
     #sobre{
         display: flex;
-        justify-content: center;
-        
-
+        justify-content: space-around;
+        flex-direction: column;
     }
     .mobile{
         display: flex;
@@ -411,7 +412,6 @@ footer h2{
         color: aliceblue;
         border-radius: 1.5%;
         width:80vw;
-        
     }
     
     #portfolio{
@@ -429,7 +429,10 @@ footer h2{
         font-size:3.5vw;
         line-height: 2.0em
     }
-    
+    #miniGallery{
+        width:40vw;
+        margin:auto;
+    }
     #portfolio h2{
         background-color: rgb(237, 100, 100);
         border-radius: 1.25vw;
@@ -464,7 +467,7 @@ footer h2{
         border:2px solid black;
         border-radius:0.125vw;
         cursor:pointer;
-        margin:2vw 0.3vw 2vw 0.3vw;
+        margin:3vw 0.5vw 3vw 0.5vw;
         height:22vw;
     }
     
@@ -567,4 +570,18 @@ footer h2{
         cursor: pointer;
     }
     
+}
+
+@media only screen and (max-width:350px) {
+    .sobreTexto{
+        width:60vw;
+        transform:translateX(-30%)
+    }
+    #portfolio{
+        width:70vw
+    }
+    .images img{
+        width:20vw;
+        height: 20vw;
+    }
 }
